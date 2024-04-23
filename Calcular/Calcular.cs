@@ -28,10 +28,10 @@ namespace CalcularSalario.Calcular
             int producto = 0;
 
 
-            Console.WriteLine("Digite el primer numero entero: ");
+            Console.WriteLine("Digite el primer número entero: ");
             num1 = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("Digite el seguno numero entero: ");
+            Console.WriteLine("Digite el segundo número entero: ");
             num2 = Convert.ToInt32(Console.ReadLine());
 
             suma = (num1 + num2);
