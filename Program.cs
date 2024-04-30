@@ -2,6 +2,6 @@
 
 Calcular calcular = new Calcular();
 
-//calcular.CalcularSalario();
+calcular.CalcularSalario();
 
-calcular.CalcularProductoSuma();
+//calcular.CalcularProductoSuma();

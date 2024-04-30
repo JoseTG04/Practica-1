@@ -8,15 +8,32 @@ namespace CalcularSalario.Calcular
             int horasTrabajadas = 0;
             int CostoHora = 0;
             decimal sueldo = 0;
+            decimal impuesto = 0.18m;
+            decimal valorImpuesto = 0;
 
-            Console.WriteLine("Digite la cantidad de horas: ");
-            horasTrabajadas = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("Digite el costo por hora:");
-            CostoHora = Convert.ToInt32(Console.ReadLine());
+            try
+            {
+                Console.WriteLine("Digite la cantidad de horas: ");
+                horasTrabajadas = Convert.ToInt32(Console.ReadLine());
 
-            sueldo = (horasTrabajadas * CostoHora);
-            Console.WriteLine($"El sueldo es: { sueldo }");
+                Console.WriteLine("Digite el costo por hora:");
+                CostoHora = Convert.ToInt32(Console.ReadLine());
+
+                sueldo = (horasTrabajadas * CostoHora);
+
+                Console.WriteLine($"El sueldo antes de impuestos es: {sueldo}");
+                if (sueldo > 3000)
+                {
+
+                }
+                               
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Ocurrió el siguiente error: { ex.Message } calculando el sueldo ");
+            }
+
         }
 
 
